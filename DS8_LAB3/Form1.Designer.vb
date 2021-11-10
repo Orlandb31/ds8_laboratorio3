@@ -65,9 +65,11 @@ Partial Class Form1
         Me.gbox_cuenta.Controls.Add(Me.Label4)
         Me.gbox_cuenta.Controls.Add(Me.lbox_retiro)
         Me.gbox_cuenta.Controls.Add(Me.Label3)
-        Me.gbox_cuenta.Location = New System.Drawing.Point(150, 383)
+        Me.gbox_cuenta.Location = New System.Drawing.Point(200, 471)
+        Me.gbox_cuenta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.gbox_cuenta.Name = "gbox_cuenta"
-        Me.gbox_cuenta.Size = New System.Drawing.Size(514, 253)
+        Me.gbox_cuenta.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gbox_cuenta.Size = New System.Drawing.Size(685, 311)
         Me.gbox_cuenta.TabIndex = 6
         Me.gbox_cuenta.TabStop = False
         Me.gbox_cuenta.Text = "Cuenta de Ahorros"
@@ -75,24 +77,27 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(401, 106)
+        Me.Label5.Location = New System.Drawing.Point(535, 130)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 13)
+        Me.Label5.Size = New System.Drawing.Size(44, 17)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Saldo"
         '
         'txt_saldo
         '
-        Me.txt_saldo.Location = New System.Drawing.Point(363, 139)
+        Me.txt_saldo.Location = New System.Drawing.Point(484, 171)
+        Me.txt_saldo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_saldo.Name = "txt_saldo"
-        Me.txt_saldo.Size = New System.Drawing.Size(118, 20)
+        Me.txt_saldo.Size = New System.Drawing.Size(156, 22)
         Me.txt_saldo.TabIndex = 5
         '
         'btn_nuevo
         '
-        Me.btn_nuevo.Location = New System.Drawing.Point(363, 182)
+        Me.btn_nuevo.Location = New System.Drawing.Point(484, 224)
+        Me.btn_nuevo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_nuevo.Name = "btn_nuevo"
-        Me.btn_nuevo.Size = New System.Drawing.Size(118, 37)
+        Me.btn_nuevo.Size = New System.Drawing.Size(157, 46)
         Me.btn_nuevo.TabIndex = 4
         Me.btn_nuevo.Text = "Nuevo"
         Me.btn_nuevo.UseVisualStyleBackColor = True
@@ -100,34 +105,40 @@ Partial Class Form1
         'lbox_depositos
         '
         Me.lbox_depositos.FormattingEnabled = True
-        Me.lbox_depositos.Location = New System.Drawing.Point(175, 56)
+        Me.lbox_depositos.ItemHeight = 16
+        Me.lbox_depositos.Location = New System.Drawing.Point(233, 69)
+        Me.lbox_depositos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lbox_depositos.Name = "lbox_depositos"
-        Me.lbox_depositos.Size = New System.Drawing.Size(132, 173)
+        Me.lbox_depositos.Size = New System.Drawing.Size(175, 212)
         Me.lbox_depositos.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(217, 32)
+        Me.Label4.Location = New System.Drawing.Point(289, 39)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(54, 13)
+        Me.Label4.Size = New System.Drawing.Size(71, 17)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Depositos"
         '
         'lbox_retiro
         '
         Me.lbox_retiro.FormattingEnabled = True
-        Me.lbox_retiro.Location = New System.Drawing.Point(22, 56)
+        Me.lbox_retiro.ItemHeight = 16
+        Me.lbox_retiro.Location = New System.Drawing.Point(29, 69)
+        Me.lbox_retiro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lbox_retiro.Name = "lbox_retiro"
-        Me.lbox_retiro.Size = New System.Drawing.Size(132, 173)
+        Me.lbox_retiro.Size = New System.Drawing.Size(175, 212)
         Me.lbox_retiro.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(64, 32)
+        Me.Label3.Location = New System.Drawing.Point(85, 39)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.Size = New System.Drawing.Size(53, 17)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Retiros"
         '
@@ -136,18 +147,21 @@ Partial Class Form1
         Me.gbox_transaccion.Controls.Add(Me.btn_generar)
         Me.gbox_transaccion.Controls.Add(Me.rb_retiro)
         Me.gbox_transaccion.Controls.Add(Me.rb_deposito)
-        Me.gbox_transaccion.Location = New System.Drawing.Point(150, 295)
+        Me.gbox_transaccion.Location = New System.Drawing.Point(200, 363)
+        Me.gbox_transaccion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.gbox_transaccion.Name = "gbox_transaccion"
-        Me.gbox_transaccion.Size = New System.Drawing.Size(514, 73)
+        Me.gbox_transaccion.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gbox_transaccion.Size = New System.Drawing.Size(685, 90)
         Me.gbox_transaccion.TabIndex = 5
         Me.gbox_transaccion.TabStop = False
         Me.gbox_transaccion.Text = "Transacciones"
         '
         'btn_generar
         '
-        Me.btn_generar.Location = New System.Drawing.Point(406, 24)
+        Me.btn_generar.Location = New System.Drawing.Point(541, 30)
+        Me.btn_generar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_generar.Name = "btn_generar"
-        Me.btn_generar.Size = New System.Drawing.Size(75, 23)
+        Me.btn_generar.Size = New System.Drawing.Size(100, 28)
         Me.btn_generar.TabIndex = 4
         Me.btn_generar.Text = "Generar"
         Me.btn_generar.UseVisualStyleBackColor = True
@@ -155,9 +169,10 @@ Partial Class Form1
         'rb_retiro
         '
         Me.rb_retiro.AutoSize = True
-        Me.rb_retiro.Location = New System.Drawing.Point(249, 30)
+        Me.rb_retiro.Location = New System.Drawing.Point(332, 37)
+        Me.rb_retiro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rb_retiro.Name = "rb_retiro"
-        Me.rb_retiro.Size = New System.Drawing.Size(58, 17)
+        Me.rb_retiro.Size = New System.Drawing.Size(74, 21)
         Me.rb_retiro.TabIndex = 3
         Me.rb_retiro.TabStop = True
         Me.rb_retiro.Text = "Retiros"
@@ -166,9 +181,10 @@ Partial Class Form1
         'rb_deposito
         '
         Me.rb_deposito.AutoSize = True
-        Me.rb_deposito.Location = New System.Drawing.Point(67, 33)
+        Me.rb_deposito.Location = New System.Drawing.Point(89, 41)
+        Me.rb_deposito.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rb_deposito.Name = "rb_deposito"
-        Me.rb_deposito.Size = New System.Drawing.Size(72, 17)
+        Me.rb_deposito.Size = New System.Drawing.Size(92, 21)
         Me.rb_deposito.TabIndex = 2
         Me.rb_deposito.TabStop = True
         Me.rb_deposito.Text = "Depósitos"
@@ -182,9 +198,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.btn_abrirCuenta)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(150, 101)
+        Me.GroupBox1.Location = New System.Drawing.Point(200, 124)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(514, 179)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(685, 220)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingrese Datos"
@@ -192,30 +210,34 @@ Partial Class Form1
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(92, 121)
+        Me.ComboBox1.Location = New System.Drawing.Point(123, 149)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(160, 24)
         Me.ComboBox1.TabIndex = 5
         '
         'txt_montoInicial
         '
-        Me.txt_montoInicial.Location = New System.Drawing.Point(92, 86)
+        Me.txt_montoInicial.Location = New System.Drawing.Point(123, 106)
+        Me.txt_montoInicial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_montoInicial.Name = "txt_montoInicial"
-        Me.txt_montoInicial.Size = New System.Drawing.Size(100, 20)
+        Me.txt_montoInicial.Size = New System.Drawing.Size(132, 22)
         Me.txt_montoInicial.TabIndex = 4
         '
         'txt_cliente
         '
-        Me.txt_cliente.Location = New System.Drawing.Point(92, 39)
+        Me.txt_cliente.Location = New System.Drawing.Point(123, 48)
+        Me.txt_cliente.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txt_cliente.Name = "txt_cliente"
-        Me.txt_cliente.Size = New System.Drawing.Size(100, 20)
+        Me.txt_cliente.Size = New System.Drawing.Size(132, 22)
         Me.txt_cliente.TabIndex = 3
         '
         'btn_abrirCuenta
         '
-        Me.btn_abrirCuenta.Location = New System.Drawing.Point(419, 55)
+        Me.btn_abrirCuenta.Location = New System.Drawing.Point(559, 68)
+        Me.btn_abrirCuenta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_abrirCuenta.Name = "btn_abrirCuenta"
-        Me.btn_abrirCuenta.Size = New System.Drawing.Size(75, 23)
+        Me.btn_abrirCuenta.Size = New System.Drawing.Size(100, 28)
         Me.btn_abrirCuenta.TabIndex = 2
         Me.btn_abrirCuenta.Text = "Abrir Cuenta"
         Me.btn_abrirCuenta.UseVisualStyleBackColor = True
@@ -223,18 +245,20 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 89)
+        Me.Label2.Location = New System.Drawing.Point(25, 110)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 13)
+        Me.Label2.Size = New System.Drawing.Size(86, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Monto Inicial"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 42)
+        Me.Label1.Location = New System.Drawing.Point(25, 52)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(42, 13)
+        Me.Label1.Size = New System.Drawing.Size(55, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Cliente:"
         '
@@ -248,41 +272,44 @@ Partial Class Form1
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.ConsultaCuentaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 28)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegistrarClienteToolStripMenuItem
         '
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'ConsultaCuentaToolStripMenuItem
         '
         Me.ConsultaCuentaToolStripMenuItem.Name = "ConsultaCuentaToolStripMenuItem"
-        Me.ConsultaCuentaToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+        Me.ConsultaCuentaToolStripMenuItem.Size = New System.Drawing.Size(130, 24)
         Me.ConsultaCuentaToolStripMenuItem.Text = "Consulta Cuenta"
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 721)
+        Me.ClientSize = New System.Drawing.Size(1067, 887)
         Me.Controls.Add(Me.gbox_cuenta)
         Me.Controls.Add(Me.gbox_transaccion)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.gbox_cuenta.ResumeLayout(False)
