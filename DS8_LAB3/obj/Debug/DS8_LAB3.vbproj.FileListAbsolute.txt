@@ -4,7 +4,6 @@ D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.SuggestedBindingRedirects.cache
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Form1.resources
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
@@ -25,3 +24,6 @@ C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LA
 C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
 C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
 C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
