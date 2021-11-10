@@ -36,6 +36,7 @@ Partial Class Form1
         Me.rb_retiro = New System.Windows.Forms.RadioButton()
         Me.rb_deposito = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.txt_montoInicial = New System.Windows.Forms.TextBox()
         Me.txt_cliente = New System.Windows.Forms.TextBox()
         Me.btn_abrirCuenta = New System.Windows.Forms.Button()
@@ -43,11 +44,16 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.error_cliente = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.error_monto = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.RegistrarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConsultaCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.gbox_cuenta.SuspendLayout()
         Me.gbox_transaccion.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbox_cuenta
@@ -59,7 +65,7 @@ Partial Class Form1
         Me.gbox_cuenta.Controls.Add(Me.Label4)
         Me.gbox_cuenta.Controls.Add(Me.lbox_retiro)
         Me.gbox_cuenta.Controls.Add(Me.Label3)
-        Me.gbox_cuenta.Location = New System.Drawing.Point(59, 304)
+        Me.gbox_cuenta.Location = New System.Drawing.Point(150, 383)
         Me.gbox_cuenta.Name = "gbox_cuenta"
         Me.gbox_cuenta.Size = New System.Drawing.Size(514, 253)
         Me.gbox_cuenta.TabIndex = 6
@@ -130,7 +136,7 @@ Partial Class Form1
         Me.gbox_transaccion.Controls.Add(Me.btn_generar)
         Me.gbox_transaccion.Controls.Add(Me.rb_retiro)
         Me.gbox_transaccion.Controls.Add(Me.rb_deposito)
-        Me.gbox_transaccion.Location = New System.Drawing.Point(59, 216)
+        Me.gbox_transaccion.Location = New System.Drawing.Point(150, 295)
         Me.gbox_transaccion.Name = "gbox_transaccion"
         Me.gbox_transaccion.Size = New System.Drawing.Size(514, 73)
         Me.gbox_transaccion.TabIndex = 5
@@ -170,17 +176,26 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.txt_montoInicial)
         Me.GroupBox1.Controls.Add(Me.txt_cliente)
         Me.GroupBox1.Controls.Add(Me.btn_abrirCuenta)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(59, 22)
+        Me.GroupBox1.Location = New System.Drawing.Point(150, 101)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(514, 179)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingrese Datos"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(92, 121)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 5
         '
         'txt_montoInicial
         '
@@ -231,14 +246,43 @@ Partial Class Form1
         '
         Me.error_monto.ContainerControl = Me
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.ConsultaCuentaToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.TabIndex = 7
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'RegistrarClienteToolStripMenuItem
+        '
+        Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
+        Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
+        '
+        'ConsultaCuentaToolStripMenuItem
+        '
+        Me.ConsultaCuentaToolStripMenuItem.Name = "ConsultaCuentaToolStripMenuItem"
+        Me.ConsultaCuentaToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+        Me.ConsultaCuentaToolStripMenuItem.Text = "Consulta Cuenta"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 673)
+        Me.ClientSize = New System.Drawing.Size(800, 721)
         Me.Controls.Add(Me.gbox_cuenta)
         Me.Controls.Add(Me.gbox_transaccion)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.IsMdiContainer = True
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.gbox_cuenta.ResumeLayout(False)
@@ -249,7 +293,10 @@ Partial Class Form1
         Me.GroupBox1.PerformLayout()
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -266,11 +313,16 @@ Partial Class Form1
     Friend WithEvents rb_retiro As RadioButton
     Friend WithEvents rb_deposito As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents txt_montoInicial As TextBox
     Friend WithEvents txt_cliente As TextBox
     Friend WithEvents btn_abrirCuenta As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents error_cliente As ErrorProvider
     Friend WithEvents error_monto As ErrorProvider
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txt_montoInicial As TextBox
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents RegistrarClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConsultaCuentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class
