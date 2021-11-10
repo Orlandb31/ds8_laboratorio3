@@ -11,3 +11,4 @@ D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbpro
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
