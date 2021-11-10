@@ -48,6 +48,7 @@ Partial Class Form1
         Me.RegistrarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.gbox_cuenta.SuspendLayout()
         Me.gbox_transaccion.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -192,6 +193,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.txt_montoInicial)
         Me.GroupBox1.Controls.Add(Me.txt_cliente)
@@ -298,6 +300,16 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(225, 124)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
+        Me.CheckBox1.TabIndex = 6
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -352,4 +364,5 @@ Partial Class Form1
     Friend WithEvents RegistrarClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultaCuentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
