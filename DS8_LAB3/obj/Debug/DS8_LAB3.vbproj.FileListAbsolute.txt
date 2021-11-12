@@ -27,3 +27,18 @@ C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LA
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
 D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
+C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb

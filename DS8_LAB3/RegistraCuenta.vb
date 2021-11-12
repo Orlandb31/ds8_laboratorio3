@@ -11,6 +11,7 @@ Public Class RegistraCuenta
     Private Sub btn_crearCuenta_Click(sender As Object, e As EventArgs) Handles btn_crearCuenta.Click
 
         Dim tipo_cuenta As Integer
+        Dim Metrans As SqlTransaction
 
         Select Case cbox_tipoCuenta.SelectedItem.ToString
             Case "Cuenta de Ahorros"
@@ -28,6 +29,8 @@ Public Class RegistraCuenta
             MsgBox("No puede dejar campos vacios")
         Else
             Dim ossCommand As New SqlCommand
+            SQLConect.Open()
+            Metrans = SQLConect.BeginTransaction
             ossCommand.Connection = SQLConect
             ossCommand.CommandTimeout = 0
             ossCommand.CommandType = CommandType.StoredProcedure
@@ -39,12 +42,15 @@ Public Class RegistraCuenta
 
             Try
 
-                SQLConect.Open()
+                ossCommand.Transaction = Metrans
                 ossCommand.ExecuteNonQuery()
                 MsgBox("La cuenta se ha creado con éxito")
+                Metrans.Commit()
 
             Catch ex As Exception
+                Metrans.Rollback()
                 MessageBox.Show(ex.Message)
+
             Finally
                 If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
 
