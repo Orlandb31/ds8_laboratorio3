@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--conexion de luis... no tocar-->
+
+<!--
 <Conexion>
-  <!--nombre del servidor-->
   <datasource>TEFHVUVSUklMTEVSQVxTUUxFWFBSRVNT</datasource>
-  <!--nombre de la base de datos-->
+  nombre de la base de datos
   <initialcatalog>TGFiMw==</initialcatalog>
   <user>cHJhY3RpY2FzbGFi</user>
   <password>MTk5Nw==</password>
 </Conexion>
+-->
 
-<!--   
- conexion para los demas ....
-<?xml version="1.0" encoding="utf-8" ?>
+   
+
 <Conexion>
 	<datasource>T1JMQU5ETy1QQ1xTUUwyMDE3</datasource>
-	<initialcatalog>Tm9ydGh3aW5k</initialcatalog>
+	<initialcatalog>TGFib3JhdG9yaW8z</initialcatalog>
 	<user>cXdpemFyZA==</user>
 	<password>cXdpemFyZA==</password>
 </Conexion>
--->

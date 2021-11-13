@@ -43,3 +43,4 @@ C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
 C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources

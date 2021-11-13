@@ -31,15 +31,19 @@ Partial Class AuditoriaCuenta
         Me.dtg_movimientos = New System.Windows.Forms.DataGridView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbo_cuentas = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.rd_ahorro = New System.Windows.Forms.RadioButton()
+        Me.rd_Corriente = New System.Windows.Forms.RadioButton()
+        Me.rd_Navidad = New System.Windows.Forms.RadioButton()
+        Me.gbox_tipocuenta = New System.Windows.Forms.GroupBox()
         CType(Me.dtg_movimientos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbox_tipocuenta.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(266, 26)
+        Me.Label1.Location = New System.Drawing.Point(282, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(205, 24)
         Me.Label1.TabIndex = 0
@@ -51,7 +55,7 @@ Partial Class AuditoriaCuenta
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(146, 74)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 16)
+        Me.Label2.Size = New System.Drawing.Size(96, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Buscar usuario"
         '
@@ -76,15 +80,15 @@ Partial Class AuditoriaCuenta
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(146, 122)
+        Me.Label3.Location = New System.Drawing.Point(146, 166)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(192, 16)
+        Me.Label3.Size = New System.Drawing.Size(191, 16)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Cuentas ligadas a este usuario"
         '
         'btn_Seleccionar
         '
-        Me.btn_Seleccionar.Location = New System.Drawing.Point(533, 203)
+        Me.btn_Seleccionar.Location = New System.Drawing.Point(533, 197)
         Me.btn_Seleccionar.Name = "btn_Seleccionar"
         Me.btn_Seleccionar.Size = New System.Drawing.Size(75, 23)
         Me.btn_Seleccionar.TabIndex = 7
@@ -95,6 +99,12 @@ Partial Class AuditoriaCuenta
         '
         Me.dtg_movimientos.AllowUserToAddRows = False
         Me.dtg_movimientos.AllowUserToDeleteRows = False
+        Me.dtg_movimientos.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dtg_movimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dtg_movimientos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dtg_movimientos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dtg_movimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal
         Me.dtg_movimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dtg_movimientos.Location = New System.Drawing.Point(149, 288)
         Me.dtg_movimientos.Name = "dtg_movimientos"
@@ -106,35 +116,70 @@ Partial Class AuditoriaCuenta
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(146, 249)
+        Me.Label4.Location = New System.Drawing.Point(146, 255)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(160, 16)
+        Me.Label4.Size = New System.Drawing.Size(159, 16)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Movimientos de la cuenta"
         '
         'cbo_cuentas
         '
         Me.cbo_cuentas.FormattingEnabled = True
-        Me.cbo_cuentas.Location = New System.Drawing.Point(149, 205)
+        Me.cbo_cuentas.Location = New System.Drawing.Point(149, 199)
         Me.cbo_cuentas.Name = "cbo_cuentas"
         Me.cbo_cuentas.Size = New System.Drawing.Size(369, 21)
         Me.cbo_cuentas.TabIndex = 10
         '
-        'Label5
+        'rd_ahorro
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(530, 124)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(89, 52)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Tipos de cuentas" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   1. ahorro" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   2. corriente" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "   3. navidad"
+        Me.rd_ahorro.AutoSize = True
+        Me.rd_ahorro.Location = New System.Drawing.Point(32, 9)
+        Me.rd_ahorro.Name = "rd_ahorro"
+        Me.rd_ahorro.Size = New System.Drawing.Size(108, 17)
+        Me.rd_ahorro.TabIndex = 12
+        Me.rd_ahorro.TabStop = True
+        Me.rd_ahorro.Text = "Cuenta de Ahorro"
+        Me.rd_ahorro.UseVisualStyleBackColor = True
+        '
+        'rd_Corriente
+        '
+        Me.rd_Corriente.AutoSize = True
+        Me.rd_Corriente.Location = New System.Drawing.Point(182, 9)
+        Me.rd_Corriente.Name = "rd_Corriente"
+        Me.rd_Corriente.Size = New System.Drawing.Size(104, 17)
+        Me.rd_Corriente.TabIndex = 13
+        Me.rd_Corriente.TabStop = True
+        Me.rd_Corriente.Text = "Cuenta Corriente"
+        Me.rd_Corriente.UseVisualStyleBackColor = True
+        '
+        'rd_Navidad
+        '
+        Me.rd_Navidad.AutoSize = True
+        Me.rd_Navidad.Location = New System.Drawing.Point(312, 9)
+        Me.rd_Navidad.Name = "rd_Navidad"
+        Me.rd_Navidad.Size = New System.Drawing.Size(117, 17)
+        Me.rd_Navidad.TabIndex = 14
+        Me.rd_Navidad.TabStop = True
+        Me.rd_Navidad.Text = "Cuenta de Navidad"
+        Me.rd_Navidad.UseVisualStyleBackColor = True
+        '
+        'gbox_tipocuenta
+        '
+        Me.gbox_tipocuenta.Controls.Add(Me.rd_ahorro)
+        Me.gbox_tipocuenta.Controls.Add(Me.rd_Navidad)
+        Me.gbox_tipocuenta.Controls.Add(Me.rd_Corriente)
+        Me.gbox_tipocuenta.Location = New System.Drawing.Point(149, 109)
+        Me.gbox_tipocuenta.Name = "gbox_tipocuenta"
+        Me.gbox_tipocuenta.Size = New System.Drawing.Size(459, 32)
+        Me.gbox_tipocuenta.TabIndex = 15
+        Me.gbox_tipocuenta.TabStop = False
         '
         'AuditoriaCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.gbox_tipocuenta)
         Me.Controls.Add(Me.cbo_cuentas)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.dtg_movimientos)
@@ -147,6 +192,8 @@ Partial Class AuditoriaCuenta
         Me.Name = "AuditoriaCuenta"
         Me.Text = "AuditoriaCuenta"
         CType(Me.dtg_movimientos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbox_tipocuenta.ResumeLayout(False)
+        Me.gbox_tipocuenta.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,5 +208,8 @@ Partial Class AuditoriaCuenta
     Friend WithEvents dtg_movimientos As DataGridView
     Friend WithEvents Label4 As Label
     Friend WithEvents cbo_cuentas As ComboBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents rd_ahorro As RadioButton
+    Friend WithEvents rd_Corriente As RadioButton
+    Friend WithEvents rd_Navidad As RadioButton
+    Friend WithEvents gbox_tipocuenta As GroupBox
 End Class
