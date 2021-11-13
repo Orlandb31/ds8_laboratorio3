@@ -27,8 +27,10 @@ Partial Class Cuentas
         Me.error_monto = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.RegistrarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.CrearNuevaCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ActualizarCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AuditoriaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -45,7 +47,7 @@ Partial Class Cuentas
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearNuevaCuentaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearNuevaCuentaToolStripMenuItem, Me.ActualizarCuentaToolStripMenuItem, Me.AuditoriaDeCuentaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
@@ -59,17 +61,29 @@ Partial Class Cuentas
         Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
+        'CrearNuevaCuentaToolStripMenuItem
+        '
+        Me.CrearNuevaCuentaToolStripMenuItem.Name = "CrearNuevaCuentaToolStripMenuItem"
+        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.CrearNuevaCuentaToolStripMenuItem.Text = "Crear Nueva Cuenta"
+        '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'CrearNuevaCuentaToolStripMenuItem
+        'ActualizarCuentaToolStripMenuItem
         '
-        Me.CrearNuevaCuentaToolStripMenuItem.Name = "CrearNuevaCuentaToolStripMenuItem"
-        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
-        Me.CrearNuevaCuentaToolStripMenuItem.Text = "Crear Nueva Cuenta"
+        Me.ActualizarCuentaToolStripMenuItem.Name = "ActualizarCuentaToolStripMenuItem"
+        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(112, 20)
+        Me.ActualizarCuentaToolStripMenuItem.Text = "Actualizar Cuenta"
+        '
+        'AuditoriaDeCuentaToolStripMenuItem
+        '
+        Me.AuditoriaDeCuentaToolStripMenuItem.Name = "AuditoriaDeCuentaToolStripMenuItem"
+        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.AuditoriaDeCuentaToolStripMenuItem.Text = "Auditoria de Cuenta"
         '
         'Cuentas
         '
@@ -95,4 +109,6 @@ Partial Class Cuentas
     Friend WithEvents RegistrarClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents CrearNuevaCuentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ActualizarCuentaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AuditoriaDeCuentaToolStripMenuItem As ToolStripMenuItem
 End Class

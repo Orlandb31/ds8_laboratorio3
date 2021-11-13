@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarCuenta.Designer.vb">
+      <DependentUpon>ActualizarCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditoriaCuenta.Designer.vb">
+      <DependentUpon>AuditoriaCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditoriaCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cuentas.vb">
       <SubType>Form</SubType>
     </Compile>
