@@ -130,6 +130,9 @@
     <Compile Include="Validaciones.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AuditoriaCuenta.resx">
+      <DependentUpon>AuditoriaCuenta.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cuentas.resx">
       <DependentUpon>Cuentas.vb</DependentUpon>
     </EmbeddedResource>
