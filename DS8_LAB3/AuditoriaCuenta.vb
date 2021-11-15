@@ -3,7 +3,67 @@ Public Class AuditoriaCuenta
 
         Dim tipo_cuenta As Integer
 
-    Private Sub btn_buscar_Click(sender As Object, e As EventArgs) Handles btn_buscar.Click
+    Private Sub AuditoriaCuenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Sqlda As SqlDataAdapter
+        Dim dtclientes As DataTable = New DataTable
+        Dim sqlQuery As String = "SELECT id_cliente, nombre+' '+ apellido+' ID '+ id_cliente as nombre
+        FROM [dbo].[tlb_datoscliente]"
+        Sqlda = New SqlDataAdapter(sqlQuery, SQLConect)
+        Sqlda.Fill(dtclientes)
+        If dtclientes.Rows.Count <> 0 Then
+            With cbo_clientes
+                .DataSource = dtclientes
+                .ValueMember = "id_cliente"
+                .DisplayMember = "nombre"
+            End With
+        End If
+        Label3.Hide()
+        btn_Seleccionar.Hide()
+        cbo_cuentas.Hide()
+        'dtg_pe.Hide()
+        dtg_movimientos.Hide()
+        Label4.Hide()
+        '' gbox_tipocuenta.Visible = False
+
+        rd_ahorro.Checked = True
+    End Sub
+
+    Private Sub btn_Seleccionar_Click(sender As Object, e As EventArgs)
+
+        Label4.Show()
+        dtg_movimientos.Show()
+        Dim Glcommand As New SqlCommand
+        Dim dtmovimientos As New DataTable
+        Dim sqlDa As SqlDataAdapter
+
+        Glcommand.Connection = SQLConect
+        Glcommand.CommandText = "SP_Auditoria"
+        Glcommand.Parameters.AddWithValue("@id_cuenta", cbo_cuentas.SelectedValue)
+        Glcommand.CommandTimeout = 0
+        Glcommand.CommandType = CommandType.StoredProcedure
+
+        Try
+            SQLConect.Open()
+            Glcommand.ExecuteNonQuery()
+            sqlDa = New SqlDataAdapter(Glcommand)
+            sqlDa.Fill(dtmovimientos)
+            If dtmovimientos.Rows.Count <> 0 Then
+                dtg_movimientos.DataSource = dtmovimientos
+                dtg_movimientos.AutoResizeColumns()
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
+        End Try
+    End Sub
+
+    Private Sub gbox_tipocuenta_Enter(sender As Object, e As EventArgs) Handles gbox_tipocuenta.Enter
+
+    End Sub
+
+    Private Sub btn_buscarCliente_Click(sender As Object, e As EventArgs) Handles btn_buscarCliente.Click
         btn_Seleccionar.Enabled = True
         Dim tipo_cuenta As Integer
         If rd_ahorro.Checked Then
@@ -60,59 +120,15 @@ Public Class AuditoriaCuenta
         End Try
     End Sub
 
-    Private Sub AuditoriaCuenta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim Sqlda As SqlDataAdapter
-        Dim dtclientes As DataTable = New DataTable
-        Dim sqlQuery As String = "SELECT id_cliente, nombre+' '+ apellido+' ID '+ id_cliente as nombre
-        FROM [dbo].[tlb_datoscliente]"
-        Sqlda = New SqlDataAdapter(sqlQuery, SQLConect)
-        Sqlda.Fill(dtclientes)
-        If dtclientes.Rows.Count <> 0 Then
-            With cbo_clientes
-                .DataSource = dtclientes
-                .ValueMember = "id_cliente"
-                .DisplayMember = "nombre"
-            End With
-        End If
-        Label3.Hide()
-        btn_Seleccionar.Hide()
-        cbo_cuentas.Hide()
-        'dtg_pe.Hide()
-        dtg_movimientos.Hide()
-        Label4.Hide()
-        '' gbox_tipocuenta.Visible = False
+    Private Sub rd_Navidad_CheckedChanged(sender As Object, e As EventArgs) Handles rd_Navidad.CheckedChanged
 
-        rd_ahorro.Checked = True
     End Sub
 
-    Private Sub btn_Seleccionar_Click(sender As Object, e As EventArgs) Handles btn_Seleccionar.Click
+    Private Sub rd_ahorro_CheckedChanged(sender As Object, e As EventArgs) Handles rd_ahorro.CheckedChanged
 
-        Label4.Show()
-        dtg_movimientos.Show()
-        Dim Glcommand As New SqlCommand
-        Dim dtmovimientos As New DataTable
-        Dim sqlDa As SqlDataAdapter
+    End Sub
 
-        Glcommand.Connection = SQLConect
-        Glcommand.CommandText = "SP_Auditoria"
-        Glcommand.Parameters.AddWithValue("@id_cuenta", cbo_cuentas.SelectedValue)
-        Glcommand.CommandTimeout = 0
-        Glcommand.CommandType = CommandType.StoredProcedure
+    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles btn_Seleccionar.Click
 
-        Try
-            SQLConect.Open()
-            Glcommand.ExecuteNonQuery()
-            sqlDa = New SqlDataAdapter(Glcommand)
-            sqlDa.Fill(dtmovimientos)
-            If dtmovimientos.Rows.Count <> 0 Then
-                dtg_movimientos.DataSource = dtmovimientos
-                dtg_movimientos.AutoResizeColumns()
-            End If
-
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        Finally
-            If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
-        End Try
     End Sub
 End Class
