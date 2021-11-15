@@ -59,9 +59,7 @@ Public Class AuditoriaCuenta
         End Try
     End Sub
 
-    Private Sub gbox_tipocuenta_Enter(sender As Object, e As EventArgs) Handles gbox_tipocuenta.Enter
 
-    End Sub
 
     Private Sub btn_buscarCliente_Click(sender As Object, e As EventArgs) Handles btn_buscarCliente.Click
         btn_Seleccionar.Enabled = True
@@ -129,6 +127,30 @@ Public Class AuditoriaCuenta
     End Sub
 
     Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles btn_Seleccionar.Click
-
+        Label4.Show()
+        dtg_movimientos.Show()
+        Dim Glcommand As New SqlCommand
+        Dim dtmovimientos As New DataTable
+        Dim sqlDa As SqlDataAdapter
+        Glcommand.Connection = SQLConect
+        Glcommand.CommandText = "SP_Auditoria"
+        Glcommand.Parameters.AddWithValue("@id_cuenta", cbo_cuentas.SelectedValue)
+        Glcommand.CommandTimeout = 0
+        Glcommand.CommandType = CommandType.StoredProcedure
+        Try
+            SQLConect.Open()
+            Glcommand.ExecuteNonQuery()
+            sqlDa = New SqlDataAdapter(Glcommand)
+            sqlDa.Fill(dtmovimientos)
+            If dtmovimientos.Rows.Count <> 0 Then
+                dtg_movimientos.DataSource = dtmovimientos
+                dtg_movimientos.AutoResizeColumns()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
+        End Try
     End Sub
+
 End Class

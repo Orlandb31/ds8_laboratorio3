@@ -62,7 +62,7 @@ Public Class ClienteMovimientos
         Dim opcion As Integer
         Dim Glcommand As New SqlCommand
         Dim dtcuentas As New DataTable
-        Dim sqlDa As SqlDataAdapter
+        '  Dim sqlDa As SqlDataAdapter
         Dim Metrans As SqlTransaction
         Dim validar As Boolean
 

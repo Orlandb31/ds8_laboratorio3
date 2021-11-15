@@ -45,9 +45,11 @@ Partial Class ClienteMovimientos
         Me.GroupBox2.Controls.Add(Me.rbt_Deposito)
         Me.GroupBox2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.GroupBox2.ForeColor = System.Drawing.Color.Silver
-        Me.GroupBox2.Location = New System.Drawing.Point(67, 388)
+        Me.GroupBox2.Location = New System.Drawing.Point(80, 316)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(688, 97)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Size = New System.Drawing.Size(516, 79)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Transacciones"
@@ -55,9 +57,10 @@ Partial Class ClienteMovimientos
         'rbt_Retiro
         '
         Me.rbt_Retiro.AutoSize = True
-        Me.rbt_Retiro.Location = New System.Drawing.Point(382, 55)
+        Me.rbt_Retiro.Location = New System.Drawing.Point(279, 32)
+        Me.rbt_Retiro.Margin = New System.Windows.Forms.Padding(2)
         Me.rbt_Retiro.Name = "rbt_Retiro"
-        Me.rbt_Retiro.Size = New System.Drawing.Size(78, 25)
+        Me.rbt_Retiro.Size = New System.Drawing.Size(63, 21)
         Me.rbt_Retiro.TabIndex = 1
         Me.rbt_Retiro.TabStop = True
         Me.rbt_Retiro.Text = "Retiro"
@@ -66,9 +69,10 @@ Partial Class ClienteMovimientos
         'rbt_Deposito
         '
         Me.rbt_Deposito.AutoSize = True
-        Me.rbt_Deposito.Location = New System.Drawing.Point(101, 55)
+        Me.rbt_Deposito.Location = New System.Drawing.Point(66, 32)
+        Me.rbt_Deposito.Margin = New System.Windows.Forms.Padding(2)
         Me.rbt_Deposito.Name = "rbt_Deposito"
-        Me.rbt_Deposito.Size = New System.Drawing.Size(106, 25)
+        Me.rbt_Deposito.Size = New System.Drawing.Size(84, 21)
         Me.rbt_Deposito.TabIndex = 0
         Me.rbt_Deposito.TabStop = True
         Me.rbt_Deposito.Text = "Deposito"
@@ -80,9 +84,11 @@ Partial Class ClienteMovimientos
         Me.GroupBox3.Controls.Add(Me.txt_Monto)
         Me.GroupBox3.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.GroupBox3.ForeColor = System.Drawing.Color.Silver
-        Me.GroupBox3.Location = New System.Drawing.Point(154, 510)
+        Me.GroupBox3.Location = New System.Drawing.Point(80, 415)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(460, 197)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Size = New System.Drawing.Size(516, 160)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Deposito/Retiro"
@@ -100,15 +106,14 @@ Partial Class ClienteMovimientos
         Me.btn_actualizar.ForeColor = System.Drawing.Color.White
         Me.btn_actualizar.Image = Nothing
         Me.btn_actualizar.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btn_actualizar.Location = New System.Drawing.Point(130, 128)
-        Me.btn_actualizar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_actualizar.Location = New System.Drawing.Point(349, 57)
         Me.btn_actualizar.Name = "btn_actualizar"
         Me.btn_actualizar.OnHoverBaseColor = System.Drawing.Color.SpringGreen
         Me.btn_actualizar.OnHoverBorderColor = System.Drawing.Color.Black
         Me.btn_actualizar.OnHoverForeColor = System.Drawing.Color.White
         Me.btn_actualizar.OnHoverImage = Nothing
         Me.btn_actualizar.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_actualizar.Size = New System.Drawing.Size(196, 42)
+        Me.btn_actualizar.Size = New System.Drawing.Size(147, 34)
         Me.btn_actualizar.TabIndex = 19
         Me.btn_actualizar.Text = "Actualizar"
         Me.btn_actualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -126,12 +131,12 @@ Partial Class ClienteMovimientos
         Me.txt_Monto.LineIdleColor = System.Drawing.Color.Gray
         Me.txt_Monto.LineMouseHoverColor = System.Drawing.Color.Silver
         Me.txt_Monto.LineThickness = 3
-        Me.txt_Monto.Location = New System.Drawing.Point(20, 32)
-        Me.txt_Monto.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_Monto.Location = New System.Drawing.Point(28, 47)
+        Me.txt_Monto.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_Monto.Name = "txt_Monto"
-        Me.txt_Monto.Size = New System.Drawing.Size(206, 54)
+        Me.txt_Monto.Size = New System.Drawing.Size(267, 44)
         Me.txt_Monto.TabIndex = 9
-        Me.txt_Monto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_Monto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'GroupBox4
         '
@@ -140,11 +145,9 @@ Partial Class ClienteMovimientos
         Me.GroupBox4.Controls.Add(Me.btn_buscarCliente)
         Me.GroupBox4.Controls.Add(Me.txt_idcliente)
         Me.GroupBox4.ForeColor = System.Drawing.Color.Silver
-        Me.GroupBox4.Location = New System.Drawing.Point(130, 117)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox4.Location = New System.Drawing.Point(80, 96)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox4.Size = New System.Drawing.Size(499, 254)
+        Me.GroupBox4.Size = New System.Drawing.Size(516, 206)
         Me.GroupBox4.TabIndex = 13
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Datos del Cliente"
@@ -153,20 +156,22 @@ Partial Class ClienteMovimientos
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.Label4.Location = New System.Drawing.Point(43, 119)
+        Me.Label4.Location = New System.Drawing.Point(32, 117)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 21)
+        Me.Label4.Size = New System.Drawing.Size(109, 17)
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "Tipo De Cuenta"
         '
         'cbox_cuentas
         '
         Me.cbox_cuentas.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.cbox_cuentas.ForeColor = System.Drawing.Color.Silver
+        Me.cbox_cuentas.ForeColor = System.Drawing.Color.Black
         Me.cbox_cuentas.FormattingEnabled = True
-        Me.cbox_cuentas.Location = New System.Drawing.Point(205, 119)
+        Me.cbox_cuentas.Location = New System.Drawing.Point(154, 114)
+        Me.cbox_cuentas.Margin = New System.Windows.Forms.Padding(2)
         Me.cbox_cuentas.Name = "cbox_cuentas"
-        Me.cbox_cuentas.Size = New System.Drawing.Size(216, 29)
+        Me.cbox_cuentas.Size = New System.Drawing.Size(163, 25)
         Me.cbox_cuentas.TabIndex = 19
         '
         'btn_buscarCliente
@@ -182,15 +187,14 @@ Partial Class ClienteMovimientos
         Me.btn_buscarCliente.ForeColor = System.Drawing.Color.White
         Me.btn_buscarCliente.Image = Nothing
         Me.btn_buscarCliente.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btn_buscarCliente.Location = New System.Drawing.Point(143, 180)
-        Me.btn_buscarCliente.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_buscarCliente.Location = New System.Drawing.Point(349, 62)
         Me.btn_buscarCliente.Name = "btn_buscarCliente"
         Me.btn_buscarCliente.OnHoverBaseColor = System.Drawing.Color.SpringGreen
         Me.btn_buscarCliente.OnHoverBorderColor = System.Drawing.Color.Black
         Me.btn_buscarCliente.OnHoverForeColor = System.Drawing.Color.White
         Me.btn_buscarCliente.OnHoverImage = Nothing
         Me.btn_buscarCliente.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_buscarCliente.Size = New System.Drawing.Size(196, 42)
+        Me.btn_buscarCliente.Size = New System.Drawing.Size(147, 34)
         Me.btn_buscarCliente.TabIndex = 18
         Me.btn_buscarCliente.Text = "Buscar"
         Me.btn_buscarCliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -208,37 +212,37 @@ Partial Class ClienteMovimientos
         Me.txt_idcliente.LineIdleColor = System.Drawing.Color.Gray
         Me.txt_idcliente.LineMouseHoverColor = System.Drawing.Color.Silver
         Me.txt_idcliente.LineThickness = 3
-        Me.txt_idcliente.Location = New System.Drawing.Point(38, 36)
-        Me.txt_idcliente.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_idcliente.Location = New System.Drawing.Point(28, 52)
+        Me.txt_idcliente.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_idcliente.Name = "txt_idcliente"
-        Me.txt_idcliente.Size = New System.Drawing.Size(206, 54)
+        Me.txt_idcliente.Size = New System.Drawing.Size(289, 44)
         Me.txt_idcliente.TabIndex = 8
-        Me.txt_idcliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idcliente.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'l1
         '
         Me.l1.AutoSize = True
         Me.l1.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
         Me.l1.ForeColor = System.Drawing.Color.Silver
-        Me.l1.Location = New System.Drawing.Point(133, 24)
-        Me.l1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.l1.Location = New System.Drawing.Point(130, 21)
         Me.l1.Name = "l1"
-        Me.l1.Size = New System.Drawing.Size(491, 57)
+        Me.l1.Size = New System.Drawing.Size(396, 46)
         Me.l1.TabIndex = 14
         Me.l1.Text = "Deposito/Retiro Cliente"
         Me.l1.Visible = False
         '
         'ClienteMovimientos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(818, 750)
+        Me.ClientSize = New System.Drawing.Size(670, 609)
         Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ClienteMovimientos"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Text = "ClienteMovimientos"
