@@ -19,3 +19,24 @@ C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\Bunifu_UI_v1.52.
 C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\Guna.UI.dll
 C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CopyComplete
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\Bunifu_UI_v1.52.dll
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DevComponents.DotNetBar2.dll
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\Guna.UI.dll
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.SuggestedBindingRedirects.cache
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.ClienteMovimientos.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
+D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb

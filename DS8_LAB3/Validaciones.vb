@@ -22,7 +22,7 @@ Public Class Validaciones
     End Function
 
     Public Function validar_Monto(ByRef idCuenta As Integer, ByRef Monto As Double)
-        Dim saldo As String
+        Dim saldo As String = 0.00
         Dim nm As Double
         Dim Glcommand As New SqlCommand
         Dim dtmonto As New DataTable
