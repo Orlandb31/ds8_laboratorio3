@@ -32,11 +32,10 @@ Partial Class Cuentas
         Me.ActualizarCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuditoriaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.pbox = New System.Windows.Forms.PictureBox()
+        Me.panel_principal = New System.Windows.Forms.Panel()
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.pbox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'error_cliente
@@ -49,38 +48,44 @@ Partial Class Cuentas
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.AllowDrop = True
+        Me.MenuStrip1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.MenuStrip1.AutoSize = False
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearNuevaCuentaToolStripMenuItem, Me.ActualizarCuentaToolStripMenuItem, Me.AuditoriaDeCuentaToolStripMenuItem})
+        Me.MenuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(142, 600)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegistrarClienteToolStripMenuItem
         '
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(139, 24)
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(112, 19)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'CrearNuevaCuentaToolStripMenuItem
         '
         Me.CrearNuevaCuentaToolStripMenuItem.Name = "CrearNuevaCuentaToolStripMenuItem"
-        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(162, 24)
+        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(130, 19)
         Me.CrearNuevaCuentaToolStripMenuItem.Text = "Crear Nueva Cuenta"
         '
         'ActualizarCuentaToolStripMenuItem
         '
         Me.ActualizarCuentaToolStripMenuItem.Name = "ActualizarCuentaToolStripMenuItem"
-        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(146, 24)
+        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(116, 19)
         Me.ActualizarCuentaToolStripMenuItem.Text = "Actualizar Cuenta"
         '
         'AuditoriaDeCuentaToolStripMenuItem
         '
         Me.AuditoriaDeCuentaToolStripMenuItem.Name = "AuditoriaDeCuentaToolStripMenuItem"
-        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(163, 24)
+        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(129, 19)
         Me.AuditoriaDeCuentaToolStripMenuItem.Text = "Auditoria de Cuenta"
         '
         'ContextMenuStrip1
@@ -89,30 +94,23 @@ Partial Class Cuentas
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'pbox
+        'panel_principal
         '
-        Me.pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pbox.Image = Global.DS8_LAB3.My.Resources.Resources.LogoUTP
-        Me.pbox.Location = New System.Drawing.Point(283, 149)
-        Me.pbox.Name = "pbox"
-        Me.pbox.Size = New System.Drawing.Size(504, 504)
-        Me.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.pbox.TabIndex = 9
-        Me.pbox.TabStop = False
+        Me.panel_principal.Location = New System.Drawing.Point(145, 0)
+        Me.panel_principal.Name = "panel_principal"
+        Me.panel_principal.Size = New System.Drawing.Size(653, 600)
+        Me.panel_principal.TabIndex = 8
         '
         'Cuentas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1067, 887)
-        Me.Controls.Add(Me.pbox)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.panel_principal)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Cuentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
@@ -120,9 +118,7 @@ Partial Class Cuentas
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.pbox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents error_cliente As ErrorProvider
@@ -133,5 +129,5 @@ Partial Class Cuentas
     Friend WithEvents CrearNuevaCuentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ActualizarCuentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AuditoriaDeCuentaToolStripMenuItem As ToolStripMenuItem
-    Public WithEvents pbox As PictureBox
+    Friend WithEvents panel_principal As Panel
 End Class

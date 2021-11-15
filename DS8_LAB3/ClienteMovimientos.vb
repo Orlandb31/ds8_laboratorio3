@@ -2,7 +2,7 @@
 Public Class ClienteMovimientos
     Dim validar_data As New Validaciones
     Private Sub btn_Buscar_Cliente_Click(sender As Object, e As EventArgs) Handles btn_Buscar_Cliente.Click
-        Dim tipo_cuenta As String
+
 
         If validar_data.validar_user(txt_idcliente.Text) = False Then
             MsgBox("No hay registro de este usuario")
