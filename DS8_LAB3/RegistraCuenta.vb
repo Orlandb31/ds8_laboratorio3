@@ -58,8 +58,5 @@ Public Class RegistraCuenta
 
         End If
 
-
-
-
     End Sub
 End Class
