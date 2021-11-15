@@ -12,7 +12,7 @@ Module ModuloConexionSQL
         Dim serverDb As String = "", nameDB As String = "", user As String = "", pass As String = ""
         lecturaXml(serverDb, nameDB, user, pass)
         cadena_conexion = "data source = " & serverDb & "; initial catalog = " & nameDB & " ; user id = " & user & " ; password = " & pass
-        '' MsgBox(cadena_conexion)
+        MsgBox(cadena_conexion)
         SQLConect = New SqlConnection(cadena_conexion)
     End Sub
 
@@ -31,14 +31,14 @@ Module ModuloConexionSQL
             user = decodeBase64(mxml.ReadElementString("user"))
             pass = decodeBase64(mxml.ReadElementString("password"))
 
-            ' MsgBox(serverDb + " " + nameDB + " " + user + " " + pass)
+            MsgBox(serverDb + " " + nameDB + " " + user + " " + pass)
 
         End While
         mxml.Close()
     End Sub
 
     Public Function decodeBase64(ByVal messageEncrypt As String) As String
-        'Convert.FromBase64String(messageEncrypt)
+        Convert.FromBase64String(messageEncrypt)
         Return System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(messageEncrypt))
     End Function
 End Module

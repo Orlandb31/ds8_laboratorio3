@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--conexion de luis... no tocar-->
+
+<!--
 <Conexion>
-	<datasource>T1JMQU5ETy1QQ1xTUUwyMDE3</datasource>
-	<initialcatalog>Tm9ydGh3aW5k</initialcatalog>
-	<user>cXdpemFyZA==</user>
-	<password>cXdpemFyZA==</password>
+  <datasource>TEFHVUVSUklMTEVSQVxTUUxFWFBSRVNT</datasource>
+  nombre de la base de datos
+  <initialcatalog>TGFiMw==</initialcatalog>
+  <user>cHJhY3RpY2FzbGFi</user>
+  <password>MTk5Nw==</password>
+</Conexion>
+-->
+
+<Conexion>
+	<datasorurce>TEFQVE9QLUY4TEROQ0cwXFNRTEVYUFJFU1M=</datasorurce>
+	<initialcatalog>TGFib3JhdG9yaW8z</initialcatalog>
+	<usuario>c29wb3J0ZQ0K</usuario>
+	<password>TWF0aGV3czA3MTIqDQo=</password>
 </Conexion>
