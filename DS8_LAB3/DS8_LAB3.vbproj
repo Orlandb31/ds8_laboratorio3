@@ -73,16 +73,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActualizarCuenta.Designer.vb">
-      <DependentUpon>ActualizarCuenta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ActualizarCuenta.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AuditoriaCuenta.Designer.vb">
       <DependentUpon>AuditoriaCuenta.vb</DependentUpon>
     </Compile>
     <Compile Include="AuditoriaCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteMovimientos.Designer.vb">
+      <DependentUpon>ClienteMovimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMovimientos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cuentas.vb">
@@ -132,6 +132,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AuditoriaCuenta.resx">
       <DependentUpon>AuditoriaCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteMovimientos.resx">
+      <DependentUpon>ClienteMovimientos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas.resx">
       <DependentUpon>Cuentas.vb</DependentUpon>

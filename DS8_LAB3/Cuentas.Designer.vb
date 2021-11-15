@@ -28,9 +28,9 @@ Partial Class Cuentas
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.RegistrarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearNuevaCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ActualizarCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuditoriaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -50,22 +50,34 @@ Partial Class Cuentas
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearNuevaCuentaToolStripMenuItem, Me.ActualizarCuentaToolStripMenuItem, Me.AuditoriaDeCuentaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 28)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegistrarClienteToolStripMenuItem
         '
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'CrearNuevaCuentaToolStripMenuItem
         '
         Me.CrearNuevaCuentaToolStripMenuItem.Name = "CrearNuevaCuentaToolStripMenuItem"
-        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
         Me.CrearNuevaCuentaToolStripMenuItem.Text = "Crear Nueva Cuenta"
+        '
+        'ActualizarCuentaToolStripMenuItem
+        '
+        Me.ActualizarCuentaToolStripMenuItem.Name = "ActualizarCuentaToolStripMenuItem"
+        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(139, 24)
+        Me.ActualizarCuentaToolStripMenuItem.Text = "Actualizar Cuenta"
+        '
+        'AuditoriaDeCuentaToolStripMenuItem
+        '
+        Me.AuditoriaDeCuentaToolStripMenuItem.Name = "AuditoriaDeCuentaToolStripMenuItem"
+        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(156, 24)
+        Me.AuditoriaDeCuentaToolStripMenuItem.Text = "Auditoria de Cuenta"
         '
         'ContextMenuStrip1
         '
@@ -73,26 +85,15 @@ Partial Class Cuentas
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'ActualizarCuentaToolStripMenuItem
-        '
-        Me.ActualizarCuentaToolStripMenuItem.Name = "ActualizarCuentaToolStripMenuItem"
-        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(112, 20)
-        Me.ActualizarCuentaToolStripMenuItem.Text = "Actualizar Cuenta"
-        '
-        'AuditoriaDeCuentaToolStripMenuItem
-        '
-        Me.AuditoriaDeCuentaToolStripMenuItem.Name = "AuditoriaDeCuentaToolStripMenuItem"
-        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
-        Me.AuditoriaDeCuentaToolStripMenuItem.Text = "Auditoria de Cuenta"
-        '
         'Cuentas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 721)
+        Me.ClientSize = New System.Drawing.Size(1067, 887)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Cuentas"
         Me.Text = "Form1"
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).EndInit()

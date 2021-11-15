@@ -12,13 +12,12 @@
         RegistraCuenta.Show()
         AuditoriaCuenta.Close()
 
-
     End Sub
 
     Private Sub ActualizarCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActualizarCuentaToolStripMenuItem.Click
-        ActualizarCuenta.MdiParent = Me
-        ActualizarCuenta.WindowState = FormWindowState.Maximized
-        ActualizarCuenta.Show()
+        ClienteMovimientos.Show()
+        ClienteMovimientos.MdiParent = Me
+        ClienteMovimientos.WindowState = FormWindowState.Maximized
     End Sub
 
     Private Sub AuditoriaDeCuentaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AuditoriaDeCuentaToolStripMenuItem.Click
@@ -26,6 +25,10 @@
         AuditoriaCuenta.WindowState = FormWindowState.Maximized
 
         AuditoriaCuenta.Show()
+
+    End Sub
+
+    Private Sub DepositoRegitroToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 
     End Sub
 End Class

@@ -21,4 +21,43 @@ Public Class Validaciones
 
     End Function
 
+    Public Function validar_Monto(ByRef idCuenta As Integer, ByRef Monto As Double)
+        Dim saldo As String
+        Dim nm As Double
+        Dim Glcommand As New SqlCommand
+        Dim dtmonto As New DataTable
+        Dim sqlDa As SqlDataAdapter
+
+
+        Glcommand.Connection = SQLConect
+        Glcommand.CommandText = "SP_Mostrar_Monto"
+        Glcommand.Parameters.AddWithValue("@id_cuenta", idCuenta)
+
+        Glcommand.CommandTimeout = 0
+        Glcommand.CommandType = CommandType.StoredProcedure
+
+        Try
+            SQLConect.Open()
+            Glcommand.ExecuteNonQuery()
+            sqlDa = New SqlDataAdapter(Glcommand)
+            sqlDa.Fill(dtmonto)
+            Dim row As DataRow = dtmonto.Rows(dtmonto.Rows.Count - 1)
+            saldo = CStr(row("monto"))
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
+        End Try
+
+        nm = CDbl(saldo)
+
+        If nm > Monto Then
+            Return True
+        Else
+            Return False
+        End If
+
+    End Function
+
 End Class

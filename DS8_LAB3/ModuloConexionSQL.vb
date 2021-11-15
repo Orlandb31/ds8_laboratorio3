@@ -17,7 +17,7 @@ Module ModuloConexionSQL
     End Sub
 
     Sub lecturaXml(ByRef serverDb As String, ByRef nameDB As String, ByRef user As String, ByRef pass As String)
-        Dim mxml As New XmlTextReader("../../Archivos/config.xml")
+        Dim mxml As New XmlTextReader("../Archivos/config.xml")
         mxml.Read()
         While Not mxml.EOF
             mxml.Read()
