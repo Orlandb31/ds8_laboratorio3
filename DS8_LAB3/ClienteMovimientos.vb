@@ -10,59 +10,7 @@ Public Class ClienteMovimientos
         rbt_Deposito.Checked = True
     End Sub
 
-    Private Sub btn_Actualizar_Click(sender As Object, e As EventArgs)
-        Dim opcion As Integer
-        Dim Glcommand As New SqlCommand
-        Dim dtcuentas As New DataTable
-        Dim sqlDa As SqlDataAdapter
-        Dim Metrans As SqlTransaction
-        Dim validar As Boolean
-
-        If rbt_Deposito.Checked = True Then
-            opcion = 0
-        ElseIf rbt_Retiro.Checked = True Then
-            opcion = 1
-        End If
-
-        If opcion = 1 Then
-            validar = validar_data.validar_Monto(cbox_cuentas.SelectedValue, txt_Monto.Text)
-        Else
-            validar = True
-        End If
-
-        If validar = True Then
-            SQLConect.Open()
-            Metrans = SQLConect.BeginTransaction
-            Glcommand.Connection = SQLConect
-            Glcommand.CommandText = "SP_Cuenta_Update_Deposito"
-            Glcommand.Parameters.AddWithValue("@id_cuenta", cbox_cuentas.SelectedValue)
-            Glcommand.Parameters.AddWithValue("@deposito_retiro", txt_Monto.Text)
-            Glcommand.Parameters.AddWithValue("@opciondr", opcion)
-            Glcommand.CommandTimeout = 0
-            Glcommand.CommandType = CommandType.StoredProcedure
-
-            Try
-
-                Glcommand.Transaction = Metrans
-                Glcommand.ExecuteNonQuery()
-                MsgBox("El monto ha sido actualizado")
-                Metrans.Commit()
-
-            Catch ex As Exception
-                Metrans.Rollback()
-                MessageBox.Show(ex.Message)
-            Finally
-                If SQLConect.State <> ConnectionState.Closed Then SQLConect.Close()
-            End Try
-        Else
-            MsgBox("Cuenta con un saldo menor para realizar el retiro")
-        End If
-
-    End Sub
-
     Private Sub btn_registrar_Click(sender As Object, e As EventArgs) Handles btn_buscarCliente.Click
-
-
         If validar_data.validar_user(txt_idcliente.Text) = False Then
             MsgBox("No hay registro de este usuario")
         ElseIf txt_idcliente.Text = String.Empty Then
@@ -157,6 +105,14 @@ Public Class ClienteMovimientos
         Else
             MsgBox("Cuenta con un saldo menor para realizar el retiro")
         End If
+
+    End Sub
+
+    Private Sub txt_idcliente_OnValueChanged(sender As Object, e As EventArgs) Handles txt_idcliente.OnValueChanged
+
+    End Sub
+
+    Private Sub cbox_cuentas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbox_cuentas.SelectedIndexChanged
 
     End Sub
 End Class

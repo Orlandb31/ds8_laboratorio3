@@ -91,7 +91,7 @@ Partial Class AuditoriaCuenta
         Me.dtg_movimientos.Name = "dtg_movimientos"
         Me.dtg_movimientos.ReadOnly = True
         Me.dtg_movimientos.RowHeadersWidth = 51
-        Me.dtg_movimientos.Size = New System.Drawing.Size(532, 185)
+        Me.dtg_movimientos.Size = New System.Drawing.Size(497, 185)
         Me.dtg_movimientos.TabIndex = 8
         '
         'Label4
@@ -238,7 +238,7 @@ Partial Class AuditoriaCuenta
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1016, 605)
+        Me.ClientSize = New System.Drawing.Size(981, 605)
         Me.Controls.Add(Me.btn_Seleccionar)
         Me.Controls.Add(Me.btn_buscarCliente)
         Me.Controls.Add(Me.l1)

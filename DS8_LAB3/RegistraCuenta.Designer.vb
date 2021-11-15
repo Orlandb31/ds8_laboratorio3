@@ -28,6 +28,8 @@ Partial Class RegistraCuenta
         Me.btn_registrar = New Guna.UI.WinForms.GunaButton()
         Me.txt_saldo = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txt_cedula = New Bunifu.Framework.UI.BunifuMaterialTextbox()
+        Me.cbox_tipoCuenta = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,7 +47,7 @@ Partial Class RegistraCuenta
         Me.l1.AutoSize = True
         Me.l1.Font = New System.Drawing.Font("Segoe UI", 25.0!, System.Drawing.FontStyle.Bold)
         Me.l1.ForeColor = System.Drawing.Color.Silver
-        Me.l1.Location = New System.Drawing.Point(288, 19)
+        Me.l1.Location = New System.Drawing.Point(315, 19)
         Me.l1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.l1.Name = "l1"
         Me.l1.Size = New System.Drawing.Size(414, 57)
@@ -55,6 +57,8 @@ Partial Class RegistraCuenta
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.cbox_tipoCuenta)
         Me.GroupBox1.Controls.Add(Me.btn_registrar)
         Me.GroupBox1.Controls.Add(Me.txt_saldo)
         Me.GroupBox1.Controls.Add(Me.txt_cedula)
@@ -135,6 +139,26 @@ Partial Class RegistraCuenta
         Me.txt_cedula.TabIndex = 8
         Me.txt_cedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
+        'cbox_tipoCuenta
+        '
+        Me.cbox_tipoCuenta.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.cbox_tipoCuenta.ForeColor = System.Drawing.Color.Silver
+        Me.cbox_tipoCuenta.FormattingEnabled = True
+        Me.cbox_tipoCuenta.Location = New System.Drawing.Point(143, 151)
+        Me.cbox_tipoCuenta.Name = "cbox_tipoCuenta"
+        Me.cbox_tipoCuenta.Size = New System.Drawing.Size(216, 29)
+        Me.cbox_tipoCuenta.TabIndex = 19
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.Label2.Location = New System.Drawing.Point(139, 117)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(142, 21)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Tipo De Cuenta"
+        '
         'RegistraCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -145,10 +169,11 @@ Partial Class RegistraCuenta
         Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RegistraCuenta"
         Me.Text = "RegistraCuenta"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,4 +185,6 @@ Partial Class RegistraCuenta
     Friend WithEvents btn_registrar As Guna.UI.WinForms.GunaButton
     Friend WithEvents txt_saldo As Bunifu.Framework.UI.BunifuMaterialTextbox
     Friend WithEvents txt_cedula As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents cbox_tipoCuenta As ComboBox
+    Friend WithEvents Label2 As Label
 End Class

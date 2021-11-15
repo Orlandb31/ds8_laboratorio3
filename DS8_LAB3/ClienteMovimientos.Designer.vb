@@ -26,14 +26,14 @@ Partial Class ClienteMovimientos
         Me.rbt_Retiro = New System.Windows.Forms.RadioButton()
         Me.rbt_Deposito = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btn_actualizar = New Guna.UI.WinForms.GunaButton()
+        Me.txt_Monto = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cbox_cuentas = New System.Windows.Forms.ComboBox()
         Me.btn_buscarCliente = New Guna.UI.WinForms.GunaButton()
         Me.txt_idcliente = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.l1 = New Guna.UI.WinForms.GunaLabel()
-        Me.txt_Monto = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.btn_actualizar = New Guna.UI.WinForms.GunaButton()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -86,6 +86,52 @@ Partial Class ClienteMovimientos
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Deposito/Retiro"
+        '
+        'btn_actualizar
+        '
+        Me.btn_actualizar.Animated = True
+        Me.btn_actualizar.AnimationHoverSpeed = 0.07!
+        Me.btn_actualizar.AnimationSpeed = 0.03!
+        Me.btn_actualizar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.btn_actualizar.BorderColor = System.Drawing.Color.Black
+        Me.btn_actualizar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btn_actualizar.FocusedColor = System.Drawing.Color.Empty
+        Me.btn_actualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_actualizar.ForeColor = System.Drawing.Color.White
+        Me.btn_actualizar.Image = Nothing
+        Me.btn_actualizar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btn_actualizar.Location = New System.Drawing.Point(130, 128)
+        Me.btn_actualizar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_actualizar.Name = "btn_actualizar"
+        Me.btn_actualizar.OnHoverBaseColor = System.Drawing.Color.SpringGreen
+        Me.btn_actualizar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btn_actualizar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btn_actualizar.OnHoverImage = Nothing
+        Me.btn_actualizar.OnPressedColor = System.Drawing.Color.Black
+        Me.btn_actualizar.Size = New System.Drawing.Size(196, 42)
+        Me.btn_actualizar.TabIndex = 19
+        Me.btn_actualizar.Text = "Actualizar"
+        Me.btn_actualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txt_Monto
+        '
+        Me.txt_Monto.AutoValidate = System.Windows.Forms.AutoValidate.Disable
+        Me.txt_Monto.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_Monto.Font = New System.Drawing.Font("Century Gothic", 9.75!)
+        Me.txt_Monto.ForeColor = System.Drawing.Color.Silver
+        Me.txt_Monto.HintForeColor = System.Drawing.Color.Silver
+        Me.txt_Monto.HintText = "Monto"
+        Me.txt_Monto.isPassword = False
+        Me.txt_Monto.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.txt_Monto.LineIdleColor = System.Drawing.Color.Gray
+        Me.txt_Monto.LineMouseHoverColor = System.Drawing.Color.Silver
+        Me.txt_Monto.LineThickness = 3
+        Me.txt_Monto.Location = New System.Drawing.Point(20, 32)
+        Me.txt_Monto.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt_Monto.Name = "txt_Monto"
+        Me.txt_Monto.Size = New System.Drawing.Size(206, 54)
+        Me.txt_Monto.TabIndex = 9
+        Me.txt_Monto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'GroupBox4
         '
@@ -182,58 +228,12 @@ Partial Class ClienteMovimientos
         Me.l1.Text = "Deposito/Retiro Cliente"
         Me.l1.Visible = False
         '
-        'txt_Monto
-        '
-        Me.txt_Monto.AutoValidate = System.Windows.Forms.AutoValidate.Disable
-        Me.txt_Monto.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_Monto.Font = New System.Drawing.Font("Century Gothic", 9.75!)
-        Me.txt_Monto.ForeColor = System.Drawing.Color.Silver
-        Me.txt_Monto.HintForeColor = System.Drawing.Color.Silver
-        Me.txt_Monto.HintText = "Monto"
-        Me.txt_Monto.isPassword = False
-        Me.txt_Monto.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.txt_Monto.LineIdleColor = System.Drawing.Color.Gray
-        Me.txt_Monto.LineMouseHoverColor = System.Drawing.Color.Silver
-        Me.txt_Monto.LineThickness = 3
-        Me.txt_Monto.Location = New System.Drawing.Point(20, 32)
-        Me.txt_Monto.Margin = New System.Windows.Forms.Padding(5)
-        Me.txt_Monto.Name = "txt_Monto"
-        Me.txt_Monto.Size = New System.Drawing.Size(206, 54)
-        Me.txt_Monto.TabIndex = 9
-        Me.txt_Monto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'btn_actualizar
-        '
-        Me.btn_actualizar.Animated = True
-        Me.btn_actualizar.AnimationHoverSpeed = 0.07!
-        Me.btn_actualizar.AnimationSpeed = 0.03!
-        Me.btn_actualizar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(140, Byte), Integer))
-        Me.btn_actualizar.BorderColor = System.Drawing.Color.Black
-        Me.btn_actualizar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btn_actualizar.FocusedColor = System.Drawing.Color.Empty
-        Me.btn_actualizar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_actualizar.ForeColor = System.Drawing.Color.White
-        Me.btn_actualizar.Image = Nothing
-        Me.btn_actualizar.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btn_actualizar.Location = New System.Drawing.Point(130, 128)
-        Me.btn_actualizar.Margin = New System.Windows.Forms.Padding(4)
-        Me.btn_actualizar.Name = "btn_actualizar"
-        Me.btn_actualizar.OnHoverBaseColor = System.Drawing.Color.SpringGreen
-        Me.btn_actualizar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btn_actualizar.OnHoverForeColor = System.Drawing.Color.White
-        Me.btn_actualizar.OnHoverImage = Nothing
-        Me.btn_actualizar.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_actualizar.Size = New System.Drawing.Size(196, 42)
-        Me.btn_actualizar.TabIndex = 19
-        Me.btn_actualizar.Text = "Buscar"
-        Me.btn_actualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'ClienteMovimientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(913, 750)
+        Me.ClientSize = New System.Drawing.Size(818, 750)
         Me.Controls.Add(Me.l1)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)

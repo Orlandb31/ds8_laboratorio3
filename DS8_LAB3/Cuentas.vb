@@ -11,7 +11,7 @@
         'RegistraCuenta.WindowState = FormWindowState.Maximized
         'RegistraCuenta.Show()
         'AuditoriaCuenta.Close()
-        AbrirForm(New AuditoriaCuenta)
+        AbrirForm(New RegistraCuenta)
 
     End Sub
 
