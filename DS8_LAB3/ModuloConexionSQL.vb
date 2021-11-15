@@ -12,12 +12,12 @@ Module ModuloConexionSQL
         Dim serverDb As String = "", nameDB As String = "", user As String = "", pass As String = ""
         lecturaXml(serverDb, nameDB, user, pass)
         cadena_conexion = "data source = " & serverDb & "; initial catalog = " & nameDB & " ; user id = " & user & " ; password = " & pass
-        MsgBox(cadena_conexion)
+        '  MsgBox(cadena_conexion)
         SQLConect = New SqlConnection(cadena_conexion)
     End Sub
 
     Sub lecturaXml(ByRef serverDb As String, ByRef nameDB As String, ByRef user As String, ByRef pass As String)
-        Dim mxml As New XmlTextReader("../Archivos/config.xml")
+        Dim mxml As New XmlTextReader("../../Archivos/config.xml")
         mxml.Read()
         While Not mxml.EOF
             mxml.Read()
@@ -30,8 +30,7 @@ Module ModuloConexionSQL
             nameDB = decodeBase64(mxml.ReadElementString("initialcatalog"))
             user = decodeBase64(mxml.ReadElementString("user"))
             pass = decodeBase64(mxml.ReadElementString("password"))
-
-            MsgBox(serverDb + " " + nameDB + " " + user + " " + pass)
+            '  MsgBox(serverDb + " " + nameDB + " " + user + " " + pass)
 
         End While
         mxml.Close()

@@ -4,6 +4,7 @@ Public Class AuditoriaCuenta
         Dim tipo_cuenta As Integer
 
     Private Sub btn_buscar_Click(sender As Object, e As EventArgs) Handles btn_buscar.Click
+        btn_Seleccionar.Enabled = True
         Dim tipo_cuenta As Integer
         If rd_ahorro.Checked Then
             tipo_cuenta = 1
@@ -34,6 +35,7 @@ Public Class AuditoriaCuenta
             SQLConect.Open()
             Glcommand.ExecuteNonQuery()
             sqlDa = New SqlDataAdapter(Glcommand)
+
             sqlDa.Fill(dtcuentas)
             If dtcuentas.Rows.Count <> 0 Then
 
@@ -42,6 +44,13 @@ Public Class AuditoriaCuenta
                     .ValueMember = "id_cuenta"
                     .DisplayMember = "impresion"
                 End With
+            Else
+                MsgBox("No tiene cuentas asociadas")
+                cbo_cuentas.DataSource = Nothing
+                cbo_cuentas.Items.Clear()
+                btn_Seleccionar.Enabled = False
+
+
             End If
 
         Catch ex As Exception

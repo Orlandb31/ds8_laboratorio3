@@ -1,6 +1,6 @@
 ﻿Public Class Inicio
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+    Private Sub GunaButton1_Click(sender As Object, e As EventArgs) Handles GunaButton1.Click
 
         Try
 
@@ -21,5 +21,13 @@
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        anima1.ShowSync(l1)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
+        anima1.ShowSync(l2)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizBlind
+        anima1.ShowSync(l3)
+        anima1.AnimationType = Guna.UI.Animation.AnimationType.HorizSlide
+        anima1.ShowSync(p2)
     End Sub
+
 End Class

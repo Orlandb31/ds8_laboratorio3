@@ -1,70 +1,21 @@
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.SuggestedBindingRedirects.cache
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
-C:\Users\Francisco\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
-D:\@Orlando\UTP\DS8 2021\Laboratorios\DS8_LAB3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
-<<<<<<< HEAD
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
-=======
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.ClienteMovimientos.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
-C:\Users\Pc Milenis\source\repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
->>>>>>> 499496987432ab4d230226c0bf3ff0034f5604c9
-C:\Users\mathe\Source\Repos\Orlandb31\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.ClienteMovimientos.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe.config
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.exe
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.pdb
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DS8_LAB3.xml
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.AssemblyReference.cache
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.AuditoriaCuenta.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.ClienteMovimientos.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Cuentas.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Inicio.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Resources.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.RegistraCuenta.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.Registro.resources
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.GenerateResource.cache
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CoreCompileInputs.cache
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.exe
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.xml
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.pdb
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\bin\Debug\Guna.UI.dll
+C:\Users\mathe\Source\Repos\ds8_laboratorio3\DS8_LAB3\obj\Debug\DS8_LAB3.vbproj.CopyComplete

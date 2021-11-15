@@ -23,6 +23,7 @@ Partial Class Cuentas
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cuentas))
         Me.error_cliente = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.error_monto = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -31,9 +32,11 @@ Partial Class Cuentas
         Me.ActualizarCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuditoriaDeCuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.pbox = New System.Windows.Forms.PictureBox()
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.pbox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'error_cliente
@@ -46,6 +49,7 @@ Partial Class Cuentas
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarClienteToolStripMenuItem, Me.CrearNuevaCuentaToolStripMenuItem, Me.ActualizarCuentaToolStripMenuItem, Me.AuditoriaDeCuentaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
@@ -58,25 +62,25 @@ Partial Class Cuentas
         'RegistrarClienteToolStripMenuItem
         '
         Me.RegistrarClienteToolStripMenuItem.Name = "RegistrarClienteToolStripMenuItem"
-        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
+        Me.RegistrarClienteToolStripMenuItem.Size = New System.Drawing.Size(139, 24)
         Me.RegistrarClienteToolStripMenuItem.Text = "Registrar Cliente"
         '
         'CrearNuevaCuentaToolStripMenuItem
         '
         Me.CrearNuevaCuentaToolStripMenuItem.Name = "CrearNuevaCuentaToolStripMenuItem"
-        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
+        Me.CrearNuevaCuentaToolStripMenuItem.Size = New System.Drawing.Size(162, 24)
         Me.CrearNuevaCuentaToolStripMenuItem.Text = "Crear Nueva Cuenta"
         '
         'ActualizarCuentaToolStripMenuItem
         '
         Me.ActualizarCuentaToolStripMenuItem.Name = "ActualizarCuentaToolStripMenuItem"
-        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(139, 24)
+        Me.ActualizarCuentaToolStripMenuItem.Size = New System.Drawing.Size(146, 24)
         Me.ActualizarCuentaToolStripMenuItem.Text = "Actualizar Cuenta"
         '
         'AuditoriaDeCuentaToolStripMenuItem
         '
         Me.AuditoriaDeCuentaToolStripMenuItem.Name = "AuditoriaDeCuentaToolStripMenuItem"
-        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(156, 24)
+        Me.AuditoriaDeCuentaToolStripMenuItem.Size = New System.Drawing.Size(163, 24)
         Me.AuditoriaDeCuentaToolStripMenuItem.Text = "Auditoria de Cuenta"
         '
         'ContextMenuStrip1
@@ -85,21 +89,38 @@ Partial Class Cuentas
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'pbox
+        '
+        Me.pbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pbox.Image = Global.DS8_LAB3.My.Resources.Resources.LogoUTP
+        Me.pbox.Location = New System.Drawing.Point(283, 149)
+        Me.pbox.Name = "pbox"
+        Me.pbox.Size = New System.Drawing.Size(504, 504)
+        Me.pbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.pbox.TabIndex = 9
+        Me.pbox.TabStop = False
+        '
         'Cuentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1067, 887)
+        Me.Controls.Add(Me.pbox)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Cuentas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.error_cliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.error_monto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.pbox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -112,4 +133,5 @@ Partial Class Cuentas
     Friend WithEvents CrearNuevaCuentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ActualizarCuentaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AuditoriaDeCuentaToolStripMenuItem As ToolStripMenuItem
+    Public WithEvents pbox As PictureBox
 End Class
